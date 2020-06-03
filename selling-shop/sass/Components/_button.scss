@@ -1,0 +1,57 @@
+.btn{
+    width: 14rem;
+    height:3.4rem;
+    text-decoration: none;
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    border:none;
+    border-radius: 2px;
+    background-color:$color-white;
+    outline: none;
+    cursor: pointer;
+    padding:0 12px;
+    color:$color-text;
+    transition: all .2s ease;
+    &:hover{
+        opacity: .85;
+    }
+    &--primary{
+        color:$color-white;
+        background-color: $color-primary;
+    }
+
+    &--current{
+        background-color:$color-white;
+        &:hover{
+            background-color:rgba($color: $color-black, $alpha: .08);
+        }
+    }
+
+    &--size-m{
+        height:30px;
+        font-size: 1.2rem;
+        padding:0 8px;
+    }
+
+    &--size-s{
+        height:34px;
+        width:34px;
+        font-size: 1.8rem;
+        font-weight: 700;
+    }
+    &--blue-dark{
+        background-color:$color-blue-dark;
+        color:$color-white;
+    }
+
+    &--small{
+        width:90px !important;
+    }
+
+    &--disabled{
+        background-color: #f9f9f9;
+        color:#ccc;
+        cursor: default;
+    }
+}

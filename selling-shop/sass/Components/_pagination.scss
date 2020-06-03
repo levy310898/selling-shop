@@ -1,0 +1,33 @@
+.pagination{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+    &__item{
+        display:inline-block;
+        margin: 0 16px;
+        &--active a{
+            background-color:$color-primary;
+            color:$color-white;
+            transition: all .2s ease;
+            &:hover{
+                opacity:.8;
+            }
+        }
+    }
+    &--link{
+        display:inline-flex;
+        text-decoration: none;
+        min-width:40px;
+        height:30px;
+        align-items: center;
+        justify-content: center;
+        background-color:transparent;
+        border-radius: 2px;
+        font-size: 2rem;
+        color:#939393;
+        
+    }
+}

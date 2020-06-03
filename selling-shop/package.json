@@ -1,0 +1,14 @@
+{
+  "name": "selling-shop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sasstocss":"sass --watch sass/main.scss css/style.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.26.2"
+  }
+}

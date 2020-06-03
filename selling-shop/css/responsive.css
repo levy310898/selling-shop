@@ -1,0 +1,137 @@
+/* low computer */
+@media only screen and (max-width:1023px){
+    .hide-on-mobile-tablet{
+        display:none !important;
+    }
+
+    .header{
+        height:70px;
+        position: fixed;
+        top:0;
+        left:0;
+        z-index: 10000;
+    }
+
+    .header__with-search{
+        height: 70px;
+    }
+
+    .header__cart{
+        width:80px;
+        justify-content: flex-end;
+    }
+
+    .header__cart__box{
+        position: fixed;
+        top: 70px;
+        width:100%;
+        padding:0 calc((100% - 644px)/2 );
+    }
+
+    .header__cart__box::after{
+        height:15px;
+        top:-15px;
+    }
+
+    .header__cart__box::before{
+        display:none;
+    }
+
+    .header__cart-list{
+        max-height: 20vh;
+    }
+
+    .btn--full{
+        width:100%;
+        margin:0 !important;
+    }
+
+    .container{
+        margin-top: 80px;
+    }
+    .header__sort-bar{
+        display:flex;
+    }
+
+    .home-product{
+        padding-top: 10px !important;
+    }
+
+    .mobile-category{
+        display:block;
+    }
+
+    .footer--heading{
+        text-align: center;
+    }
+
+    .footer__info-link{
+        text-align: center;
+    }
+    .footer__download{
+        justify-content: center;
+    }
+
+    .footer__download__app{
+        flex:unset;
+    }
+
+}
+/*tablet*/
+@media(min-width: 768px) and (max-width:1023px){
+    .hide-on-tablet{
+        display:none;
+    }
+
+    
+
+    .home-product__item{
+        margin-bottom: 16px !important;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .hide-on-mobile{
+        display:none;
+    }
+
+    .header__with-search{
+        justify-content: space-between;
+    }
+    .header__with-search--icon{
+        display:inline-block;
+    }
+
+    .header__search--close{
+        display: inline-flex;
+    }
+
+    .header__logo{
+        width:unset;
+    }
+
+    .header__cart{
+        width:unset;
+    }
+
+    .header__search{
+        position: fixed;
+        top: 70px;
+        left:0;
+        width:100%;
+        z-index: 1000 !important;
+    }
+
+    .app__content-mobile{
+        margin-left: 4px !important;
+        margin-right: 4px !important;
+    }
+    .pagination__item{
+        margin:5px;
+    }
+
+    .pagination--link{
+        min-width: 36px;
+    }
+}
+

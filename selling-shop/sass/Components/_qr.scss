@@ -1,0 +1,39 @@
+.qr{
+    background-color:$color-white;
+    position: absolute;
+    left:0;
+    top:3rem;
+    width:184px;
+    padding:.2rem;
+    opacity:0;
+    visibility: hidden;
+    transition: all .4s ease;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba($color: $color-black, $alpha: .2);
+    &::before{
+        content:'';
+        width:120%;
+        height:2rem;
+        position: absolute;
+        top:-1.5rem;
+        left:0;
+        background-color:transparent;
+    }
+    &--img{
+        width:100%;
+    }
+
+    &__app{
+        width:100%;
+        display:flex;
+        justify-content: space-between;
+        padding: .5rem 1rem;
+        &--link{
+            width:7rem;
+
+        }
+        &--img{
+            width:100%;
+        }
+    }
+}

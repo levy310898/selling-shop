@@ -1,0 +1,96 @@
+.notify{
+    box-shadow: 0 2rem 5rem rgba($color-black,.2);
+    width:42rem;
+    background-color:$color-white;
+    position: absolute;
+    top:3rem;
+    right:0;
+    border: 1px solid $color-gray;
+    opacity:0;
+    visibility: hidden;
+    transition: .3s ease;
+    transform: scale(0);
+    transform-origin: 90% top;
+    z-index: 1000 !important;
+    &::before{
+        content:'';
+        width:100%;
+        height:2rem;
+        position: absolute;
+        top:-2rem;
+        left:0;
+        background-color:transparent;
+    }
+
+    &::after{
+        content:'';
+        position:absolute;
+        display:block;
+        height: 3rem;
+        width:3rem;
+        top:-.5rem;
+        right:3rem;
+        transform:rotate(45deg);
+        background-color: $color-white;
+    }
+    &__header{
+        cursor:text;
+        height:40px;
+        padding-left:1rem;
+        &--content{
+            display:block;
+            color: $color-gray;
+            line-height: 40px;
+            text-transform: capitalize;
+        }
+    }
+
+    &__list{
+        padding-left:0;
+        .notify__item{
+            list-style: none;
+            padding:.5rem 0;
+            &:hover{
+                background-color: $color-gray-light;
+            }
+            .notify--link{
+                display:flex;
+                text-decoration: none;
+                color:$color-black;
+                padding: 0 1rem;
+                .notify--img{
+                    width:4rem;
+                    object-fit: contain;
+                }
+
+                .notify__info{
+                    padding-left:1rem;
+                    &--name{
+                        font-size:1.4rem;
+                        margin-bottom:.5rem;
+                    }
+
+                    &--content{
+                        font-size:1.2rem !important;
+                        color:$color-gray-text;
+                    }
+                }
+            }
+        }
+    }
+
+    &__footer{
+        text-align:center;
+        &--link{
+            display:block;
+            padding:1rem 0;
+            width:100%;
+            text-align: center;
+            text-decoration: none;
+            color:$color-black;
+            &:hover{
+                background-color:$color-gray-light;
+            }
+        }
+    }
+}
