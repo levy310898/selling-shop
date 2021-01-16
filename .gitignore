@@ -1,0 +1,5 @@
+.vscode/tasks.json
+.idea/
+.vs
+node_modules/
+package-lock.json
